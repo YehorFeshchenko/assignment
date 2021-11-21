@@ -1,7 +1,7 @@
 package models
 
 type Account struct {
-	UserId     string
+	User_id    string
 	USDBalance float64
 	EURBalance float64
 }
@@ -13,19 +13,3 @@ type Transaction struct {
 	TimePlaced       string  `json:"time_placed"`
 	CurrencyStr      string  `json:"currency"`
 }
-
-type Currency int
-
-const (
-	USD Currency = iota
-	EUR
-)
-
-type OperationType int
-
-const (
-	DEPOSIT OperationType = iota
-	WITHDRAWAL
-)
-
-const FACTOR = 1000
