@@ -14,18 +14,6 @@ import (
 type Currency int
 
 const (
-	USD Currency = iota
-	EUR
-)
-
-type OperationType int
-
-const (
-	DEPOSIT OperationType = iota
-	WITHDRAWAL
-)
-
-const (
 	FACTOR       = 1000
 	EURString    = "EUR"
 	USDString    = "USD"
