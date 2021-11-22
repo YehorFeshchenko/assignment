@@ -21,7 +21,6 @@ const (
 	WithdrString = "withdrawal"
 )
 
-//const URI = "mongodb+srv://admin:admin@cluster0.qmwwt.mongodb.net/assignmentDB?retryWrites=true&w=majority"
 var URI string
 
 func StoreTransaction(t models.Transaction) bool {
